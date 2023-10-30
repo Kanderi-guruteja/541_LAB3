@@ -1,9 +1,9 @@
 document.addEventListener("DOMContentLoaded", function () {
     const billTotalInput = document.getElementById("bill-total");
     const tipInput = document.getElementById("tip");
-    const tipPercentageDisplay = document.getElementById("tip-percentage-display");
+    const tipPercentageDisplay = document.getElementById("tip-percentage");
     const tipAmountInput = document.getElementById("tip-amount");
-    const totalWithTipInput = document.getElementById("total-with-tip");
+    const totalWithTipInput = document.getElementById("total");
 
     billTotalInput.addEventListener("input", calculateTip);
     tipInput.addEventListener("input", calculateTip);
@@ -29,4 +29,3 @@ document.addEventListener("DOMContentLoaded", function () {
 
     calculateTip(); // Initial calculation
 });
-
